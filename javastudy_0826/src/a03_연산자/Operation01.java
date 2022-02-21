@@ -13,9 +13,10 @@ public class Operation01 {
  * 
  */
 		
-		System.out.println(score++);   // 10 출력
+		System.out.println(score--);   // 10 출력
 		System.out.println(score);     // 다음번 사용되면 11 출력
-		System.out.println(--score);
+		System.out.println(score++);
+		System.out.println(score);
 
 	}
 
