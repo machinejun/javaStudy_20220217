@@ -15,7 +15,7 @@ package a01_HelloJava;     // HelloJava 라는 파일이 a01_HelloJava 패키지
 // 주석의 단축키 ctrl + /
 
 
-public class HelloJava {  //여기는 HelloJava class 선언문입니다. 파일명이랑 이름이 같아야한다. + class 파일은 시작 문자가 대문자로 시작해야한다.(약속임)
+public class HelloJava {  //여기는 HelloJava class 선언문입니다. 파일명이랑 이름이 같아야한다. ★ + class 파일은 시작 문자가 대문자로 시작해야한다.(약속임)
 
 	public static void main(String[] args) {  //main : 프로그램의 시작지점(실행)
 //		'문자' => 'a' 한글자
