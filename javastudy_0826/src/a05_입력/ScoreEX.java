@@ -11,7 +11,7 @@ public class ScoreEX {
 		int score = sc.nextInt();
 		String grade = null;
 		
-		grade = !(score >-1 && score > 101) ? 
+		grade = score >-1 && score < 101 ? 
 					score > 89 ? "A":
 						score > 79 ? "B":
 							score > 69 ? "C" :
