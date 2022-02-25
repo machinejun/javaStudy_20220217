@@ -19,6 +19,7 @@ public class Quiz1 {
 		
 		if( num < 100000 && num > 0 ) {	
 			for ( int i = 0 ; i < num ; i++) {			
+				
 				System.out.println(num -i);
 			}
 		}else {
