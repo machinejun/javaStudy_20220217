@@ -9,16 +9,17 @@ public class Quiz_star3 {
 		int N = 0;
 		N = sc.nextInt();
 		
-		for(int i = 0 ; i < N; i++) {
-			for(int j = 0; j < N; j++) {
-				if(j < N-i-1) {
-				System.out.print(" ");
-				}else {
+		if( N > 0 && N < 101) {	
+			for(int i = 0 ; i < N; i++) {
+				for(int j = 0; j < N-i-1; j++) {
+					System.out.print(" ");
+				}	
+				for( int j =0 ; j < i+1; j++)	{
 					System.out.print("*");
+					
 				}
+				System.out.println();
 			}
-			System.out.println();
-		}		
+		}
 	}
-
 }
