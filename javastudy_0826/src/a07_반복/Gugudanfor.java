@@ -4,15 +4,17 @@ public class Gugudanfor {
 
 	public static void main(String[] args) {
 		int dan = 2;
-		for(int i = 0 ; i < 9; i++) {
+		
+		for(int i = 0; i<9 ;) {	
 			int num = i+1;
+			i++;
 			System.out.println(dan + "X" + num + "=" + (dan*num));
 		}
 		
-		for(int i = 0, j =0 ; i < 9; i++, j++) {
-			int num = ++i;
-			System.out.println(dan + "X" + num + "=" + (dan*num));
-		}
+//		for(int i = 0, j =0 ; i < 9; i++, j++) {
+//			int num = ++i;
+//			System.out.println(dan + "X" + num + "=" + (dan*num));
+//		}
 	}
 
 }
