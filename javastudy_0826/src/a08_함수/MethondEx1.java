@@ -7,7 +7,7 @@ public class MethondEx1 {  // 메소드는 똑같은 이름, 똑같은 매개변
 	}
 	
 	public static void showName() {   // return 타입이 있으면 값이 있다는 것, void 값이 없으므로 단순하게 실행되는 용도
-		String name = "하만준";
+		String name = "홍길동";
 		System.out.println("이름: " + name);
 	}
 	
@@ -35,14 +35,10 @@ public class MethondEx1 {  // 메소드는 똑같은 이름, 똑같은 매개변
 		int number = outputNumber();
 		System.out.println(number);
 		showName();
-		if( number == 10) { // main 메소드에서 빠져나옴
-			return;
-		}
 		showName2("박사");
 		int number2 = outputNumber2(100);   // 100이 outputnumber2 메소의 매개변수에 들어감
 		System.out.println(number2);
-		int number3 = outputNumber3(57);
-		System.out.println(number3);
+		System.out.println(outputNumber3(10));
 		
 	}
 }

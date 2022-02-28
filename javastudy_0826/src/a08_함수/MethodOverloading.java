@@ -43,8 +43,5 @@ public class MethodOverloading {
 		sum(10,20);
 		sum(10, 5.25);
 		sum("10.25", 0.25);
-		
-
 	}
-
 }

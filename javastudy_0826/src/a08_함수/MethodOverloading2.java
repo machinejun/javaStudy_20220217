@@ -21,29 +21,38 @@ public class MethodOverloading2 {
 
 	public static double calc(double a, String b, double c) {
 		double result = 0;
+		boolean isCalculated = false;
 		switch(b) {
 			case "+":
 				result = a + c;
-				System.out.println("결과: "+result);
+				isCalculated = true;
 				break;
 			case "-":
 				result = a - c;
-				System.out.println("결과: "+result);
+				isCalculated = true;
 				break;
 			case "*":
 				result = a * c;
-				System.out.println("결과: "+result);
+				isCalculated = true;
 				break;
 			case "/":
 				result = a / c;
-				System.out.println("결과: "+result);
+				isCalculated = true;
 				break;
-			default:
-				System.out.println("error");
-				} return result;
+		}
+		
+		if(isCalculated) {
+			print(result);
+		} else {
+			System.out.println("error");
+		}
+		
+		return result;
 	}
 	
-	
+	private static void print(double result) {
+		System.out.println("결과: "+result);
+	}
 	
 	// 실수를 문자열로 변환 Double.toString(result)
 
@@ -51,7 +60,8 @@ public class MethodOverloading2 {
 		String b = null;
 		double a = 0;
 		double c = 0;
-		boolean flag = true;
+		final String END = "end";
+
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("계산기: ");
@@ -61,8 +71,14 @@ public class MethodOverloading2 {
 		
 		while(true) {
 			a = calc(a,b,c);
-			b = sc.next();				
+			b = sc.next();
+			
+			if ( b.equals(END)) {
+				System.out.println("종료");
+				break;
+			}
+			
 			c = sc.nextDouble();
-			}	
-		}
+		}	
 	}
+}
