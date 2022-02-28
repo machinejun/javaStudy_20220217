@@ -21,27 +21,27 @@ public class MethodOverloading2 {
 
 	public static double calc(double a, String b, double c) {
 		double result = 0;
-		boolean isCalculated = false;
+		boolean isCalcutated = false;
 		switch(b) {
 			case "+":
 				result = a + c;
-				isCalculated = true;
+				isCalcutated = true;
 				break;
 			case "-":
 				result = a - c;
-				isCalculated = true;
+				isCalcutated = true;
 				break;
 			case "*":
 				result = a * c;
-				isCalculated = true;
+				isCalcutated = true;
 				break;
 			case "/":
 				result = a / c;
-				isCalculated = true;
+				isCalcutated = true;
 				break;
 		}
 		
-		if(isCalculated) {
+		if(isCalcutated) {
 			print(result);
 		} else {
 			System.out.println("error");
