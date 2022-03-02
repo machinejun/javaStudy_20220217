@@ -24,7 +24,6 @@ package a09_클래스;
 	 
 	 public Student(String studentName, String schoolName, int studentYear, int studentGroup, int studentNumber,
 			String studentAddress, String studentphone_number, boolean graduationFlag) {
-		this();
 		this.studentName = studentName;
 		this.schoolName = schoolName;
 		this.studentYear = studentYear;

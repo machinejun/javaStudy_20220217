@@ -36,6 +36,7 @@ public class ComputerTest {
 		 */
 		c1.printInfo();
 		c2.printInfo();
+
 	}
 
 }
