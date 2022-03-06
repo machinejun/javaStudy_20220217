@@ -3,6 +3,18 @@ package a09_클래스;
 public class CarTest {
 
 	public static void main(String[] args) {
+		// Car c2;  -- 변수 선언(Car 참조 자료형) : Car를 담을 수 있는 공간
+		// 참조 자료형 = 주소값을 가짐
+		// String str = "김준일"; 주소값을 가짐,
+		// new Car();  // Car 객체 생성 -> 힙메모리 영역에 Car 클래스 사이즈만큼 메모리를 빌려서 할당
+		// ex> 10002588
+		// c2 = new Car(); 주소를 변수에 담는다.
+		// c2. 그래서 이제 Car 클래스의 변수, 메소드에 접근할 수 있다.
+		
+		
+		
+		
+		
 		/*
 		 *  Car 클래스 정의
 		 *  
