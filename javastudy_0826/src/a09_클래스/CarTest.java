@@ -52,27 +52,29 @@ public class CarTest {
 		car2.company = "기아";
 		car2.oil = 5;
 		
-		car1.showCarInfo();
-		car1.go();
-		car1.go();
-		car1.go();
-		car1.go();
-		car1.go();
-		car1.go();
-		car1.go();
-		car1.oiling();
-		car1.showCarInfo();
-		// car1.oilError(); private로 설정하여서 외부에서 쓸수 없다.
+		System.out.println(car1.model);
 		
+		car1.showCarInfo();
+//		car1.go();
+//		car1.go();
+//		car1.go();
+//		car1.go();
+//		car1.go();
+//		car1.go();
+//		car1.go();
+//		car1.oiling();
+//		car1.showCarInfo();
+		// car1.oilError(); private로 설정하여서 외부에서 쓸수 없다.
+		System.out.println(car2.company);
 		car2.showCarInfo();
-		car2.go();
-		car2.oiling();
-		car2.oiling();
-		car2.oiling();
-		car2.oiling();
-		car2.oiling();
-		car2.oiling();
-		car2.showCarInfo();
+//		car2.go();
+//		car2.oiling();
+//		car2.oiling();
+//		car2.oiling();
+//		car2.oiling();
+//		car2.oiling();
+//		car2.oiling();
+//		car2.showCarInfo();
 		
 	}
 

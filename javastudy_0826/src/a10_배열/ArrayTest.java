@@ -40,6 +40,8 @@ public class ArrayTest {
 		hangul[8] = "차";
 		hangul[9] = "카";
 		
+		System.out.println(hangul[0]);
+		
 		for (int i = 0; i < hangul.length ; i++ ) {
 			System.out.println(hangul[i]);
 		}
