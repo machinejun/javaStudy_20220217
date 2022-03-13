@@ -3,6 +3,7 @@ package a13_인터페이스2.controller;
 import java.util.Scanner;
 
 import a13_인터페이스2.model.User; // import (단축키) =  ctrl + shift + o
+import a13_인터페이스2.service.AccountService;
 import a13_인터페이스2.service.UserService;
 import a13_인터페이스2.view.Index;
 import a13_인터페이스2.view.IndexImpl;
@@ -15,11 +16,14 @@ public class PageController {
 	
 	private final Input input;
 	private final UserService userService;
+	private final AccountService accountSerive;
+
 	
-	public PageController( Input input, UserService userService) { // 업캐스팅된 주소값들이 들어옴
+	public PageController( Input input, UserService userService, AccountService accoutService) { // 업캐스팅된 주소값들이 들어옴
 		
 		this.input=input;
 		this.userService = userService;
+		this.accountSerive = accoutService;
 		
 	}
 	
