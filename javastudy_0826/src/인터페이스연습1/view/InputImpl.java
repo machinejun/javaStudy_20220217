@@ -21,21 +21,21 @@ public class InputImpl implements Input{
 		System.out.print("회원아이디: ");
 		user.setUserName(scanner.nextLine());
 		System.out.print("회원비밀번호: ");
-		user.setUserName(scanner.nextLine());
+		user.setPassword(scanner.nextLine());
 		System.out.print("회원이름: ");
-		user.setUserName(scanner.nextLine());
+		user.setName(scanner.nextLine());
 		return user;
 	}
 	
 	@Override
 	public String findUserName(Scanner scanner) {
-		// TODO Auto-generated method stub
-		return null;
+		System.out.println("[회원아이디로 조회]");
+		System.out.print("아이디 검색: ");
+		return scanner.nextLine();
 	}
 
 	@Override
 	public int clickLike() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 	

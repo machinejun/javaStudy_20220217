@@ -40,7 +40,6 @@ public class UserServiceImpl implements UserService{
 		// 매개변수(우리가 찾고자하는 username)을 가진 user객체를 return한다.
 		User[] users = userData.getUsers();
 		User user = null;
-		
 		for(int i = 0; i<users.length; i++) {
 			if(users[i] != null && users[i].getUsername().equals(username)) {
 				user = users[i];

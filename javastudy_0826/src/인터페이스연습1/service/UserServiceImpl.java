@@ -7,7 +7,7 @@ import 인터페이스연습1.model.User;
 
 
 
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 	private final UserData userData;
 	private final Scanner scanner;
 	
@@ -47,12 +47,24 @@ public class UserServiceImpl implements UserService{
 				user = users[i];
 				break;
 			}
-			return user;
 		}
 		
-		return null;
+		return user;
 	}
 	
+	@Override
+	public User upLike(User users) {
+		int like = users.getLike();
+		like++;
+		users.setLike(like);
+		return users;
+	}
 	
-
+	@Override
+	public User downLike(User users) {
+		int like = users.getLike();
+		like--;
+		users.setLike(like);
+		return users;
+	}
 }

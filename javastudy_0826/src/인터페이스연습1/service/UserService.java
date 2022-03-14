@@ -6,5 +6,6 @@ public interface UserService {
 	public void addUser(User users);
 	public User[] getUsers();
 	public User getUser(String userName);
-
+	public User upLike(User users);
+	public User downLike(User users);
 }
