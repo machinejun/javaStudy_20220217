@@ -1,3 +1,4 @@
+
 package a16_스태틱;
 
 public class carstaticTest {

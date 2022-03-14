@@ -1,22 +1,20 @@
 package 인터페이스연습.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class User {
 	private String username;
 	private String password;
 	private String name;
 	private String email;
 	
-	public User() {
-		// TODO Auto-generated constructor stub
-	}
-	
-	public User(String username, String password, String name, String email) {//전체 생성자
-		super();
-		this.username = username;
-		this.password = password;
-		this.name = name;
-		this.email = email;
-	}
+
 
 	public String getUsername() {
 		return username;

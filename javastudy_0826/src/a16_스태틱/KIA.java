@@ -3,13 +3,14 @@ package a16_스태틱;
 import java.time.LocalDate;
 
 public class KIA {
-	private static KIA instance;
+	private static KIA instance; //한번 생성되면 계속 공유
 	private String companyName;
 	private int serialNumber;
 	
 	
 	private KIA() {
-		companyName = getClass().getSimpleName(); // getName (패키지 + 클래스 이름 가져옴) , getSimpleName( 클래스 이름만 가져옴)
+		companyName = getClass().getSimpleName(); //해당 클래스.해당클래스 이름을 가지고 온다. = KIA
+		// getName (패키지 + 클래스 이름 가져옴) , getSimpleName( 클래스 이름만 가져옴)
 		serialNumber = LocalDate.now().getYear()* 10000; // 년도(,날짜,시간) 가져오기
 	}
 	

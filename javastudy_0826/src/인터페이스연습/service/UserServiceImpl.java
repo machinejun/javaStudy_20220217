@@ -1,13 +1,20 @@
 package 인터페이스연습.service;
 
+import java.util.Scanner;
+
 import 인터페이스연습.Data.UserData;
 import 인터페이스연습.model.User;
 
 public class UserServiceImpl implements UserService{
 	private final UserData userData;
+	private final Scanner scanner;
 	
-	public UserServiceImpl(UserData userData) {
-		this.userData = userData;
+	public UserServiceImpl() {
+		scanner = new Scanner(System.in);
+		System.out.print("관리할 회원 수를 입력해주세요:");
+		User[] users = new User[scanner.nextInt()]; 
+		this.userData = UserData.getInstance(users);
+		
 		
 	}
 	

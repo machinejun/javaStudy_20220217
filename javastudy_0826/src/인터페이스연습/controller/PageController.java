@@ -3,6 +3,8 @@ package 인터페이스연습.controller;
 import java.util.Scanner;
 
 import 인터페이스연습.model.User;
+import 인터페이스연습.service.AccountService;
+import 인터페이스연습.service.AccountServiceImpl;
 import 인터페이스연습.service.UserService;
 import 인터페이스연습.view.Index;
 import 인터페이스연습.view.IndexImpl;
@@ -15,12 +17,14 @@ public class PageController {
 
 	private final Input input;
 	private final UserService userService;
+	private final AccountService accountService; 
 	
 	
-	public PageController(Input input, UserService userService) { // index, input으로 업캐스팅 된 주소값이 들어온다. 
+	public PageController(Input input, UserService userService, AccountService accountService) { // index, input으로 업캐스팅 된 주소값이 들어온다. 
 		                                                                       // pagecontroller가 생성되는 시점에 값이 주입된다.
 		this.input = input;
 		this.userService = userService;
+		this.accountService = accountService;
 		
 	}
 	
@@ -61,6 +65,8 @@ public class PageController {
 					}
 					users[i].showInfo();
 				}
+				System.out.println("-----------------------------------------------------");
+				accountService.printfUserProfile();
 				
 			}else if(select == '2') {
 				String username = input.typedUsername(scanner);
