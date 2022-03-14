@@ -13,5 +13,16 @@ public class User {
 	private String password;
 	private String name;
 	private int like = 0;
+
+	
+	public int like() {
+		return ++like;
+	}
+	
+
+	public int dislike() {
+		return --like;
+	}
 	
 }
+

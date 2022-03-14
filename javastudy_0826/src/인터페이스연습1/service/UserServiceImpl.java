@@ -53,18 +53,12 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	@Override
-	public User upLike(User users) {
-		int like = users.getLike();
-		like++;
-		users.setLike(like);
-		return users;
+	public void upLike(User user) {
+		user.like();
 	}
 	
 	@Override
-	public User downLike(User users) {
-		int like = users.getLike();
-		like--;
-		users.setLike(like);
-		return users;
+	public void downLike(User user) {
+		user.dislike();
 	}
 }

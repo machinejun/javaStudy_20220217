@@ -84,32 +84,28 @@ public class PageController {
 		while(true) {
 			choseLike.show();
 			char select = input.selectIndex(scanner);
-			String username = input.findUserName(scanner);
-			User user = userService.getUser(username);
-			
-			if(select == '1') {
-				if( user == null) {
-					System.out.println("해당아이디를 찾을수 없습니다.");
-				}else {
-					User a = userService.upLike(user);
-					System.out.println(a.getName()+": 좋아요("+a.getLike()+")");
-				}
-			}else if(select == '2') {
-				if( user == null) {
-					System.out.println("해당아이디를 찾을수 없습니다.");
-				}else {
-					User a = userService.downLike(user);
-					System.out.println(a.getName()+": 좋아요("+ a.getLike()+")");
-				}
-			}else if(select =='3') {
-				if( user == null) {
-					System.out.println("해당아이디를 찾을수 없습니다.");
-				}else {
-					System.out.println(user.getName()+": 좋아요("+user.getLike()+")");
-				}
-			}else if(select =='b') {
+			if(select == 'b') {
 				System.out.println("뒤로가기"); // 왜 뒤로가기하면 findUserName이 출력이 되는 걸까 ?
 				break;
+			}else if(select == '1'|| select == '2' || select == '3'){
+				String username = input.findUserName(scanner);
+				User user = userService.getUser(username);
+				
+				if(user == null) {
+					System.out.println("해당아이디를 찾을수 없습니다.");
+				}else {
+					if(select == '1') {
+						userService.upLike(user);
+						System.out.println(user.getName()+": 좋아요("+user.getLike()+")");
+					}
+					if(select == '2') {
+						userService.downLike(user);
+						System.out.println(user.getName()+": 좋아요("+ user.getLike()+")");
+					}
+					if(select =='3') {
+						System.out.println(user.getName()+": 좋아요("+user.getLike()+")");
+					}
+				}
 			}else {
 				System.out.println("Error");
 			}
