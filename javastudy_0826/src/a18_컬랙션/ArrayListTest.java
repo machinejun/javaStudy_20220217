@@ -20,9 +20,11 @@ public class ArrayListTest {
 		strList.add("e");
 		strList.add("f");
 		
-		strList.set(2, "q");
-		strList.set(3, "q");
-		strList.set(4, "q");
+//		strList.set(2, "q");
+//		strList.set(3, "q");
+//		strList.set(4, "q");
+		
+		System.out.println(strList.indexOf("e"));
 		
 		
 		
@@ -68,15 +70,15 @@ public class ArrayListTest {
 //			System.out.println(strList);	
 //		}
 		
-		while(strList.contains("q")) {
-			System.out.println(strList.remove("q"));
-		}
-		System.out.println(strList);
-		
-		if(!(strList.isEmpty())) {
-			strList.clear();
-		}
-		System.out.println(strList);
-		
+//		while(strList.contains("q")) {
+//			System.out.println(strList.remove("q"));
+//		}
+//		System.out.println(strList);
+//		
+//		if(!(strList.isEmpty())) {
+//			strList.clear();
+//		}
+//		System.out.println(strList);
+//		
 	}
 }

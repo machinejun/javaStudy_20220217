@@ -1,0 +1,9 @@
+18. 컬렉션
+
+18.1 ArrayList
+: 표준 배열보다는 느리지만 배열에 많은 조작이 필요한 경우 많이 사용
+: Collection 프레임워크 일부이면 java.util패키지에 포함되어있다.
+: 객체가 추가되어 용량을 초가하면 자동으로 부족한 크기만큼 용량이 늘어난다.
+
+※ ArrayList(class) -(implements)-> List(interface) -(Extends)-> Collection
+
