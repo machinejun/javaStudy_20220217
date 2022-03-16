@@ -11,11 +11,15 @@ public class StudentTest {
 		service.addStudent("AAA", "aaaa", "aaaaaaaa");
 		service.addStudent("BBB", "bbbb", "bbbbbbbb");
 		service.addStudent("CCC", "cccc", "cccccccc");
+		service.addStudent("DDD", "dddd", "dddddddd");
 		service.showStudentAll();
 		
-		service.updateStudentByName("AAA", "", "ddddddd");
+		service.updateStudentByName("AAA", "ttt", "ddddddd");
+		service.updateStudentByName("DDD", null, "qqqqqqq");
+		service.updateStudentByName("CCC", "rrr", null);
+		
 		service.showStudentByName("CCC");
-		service.deleteStudentByName("RRR");
+		service.deleteStudentByName("BBB");
 		service.showStudentAll();
 
 	}

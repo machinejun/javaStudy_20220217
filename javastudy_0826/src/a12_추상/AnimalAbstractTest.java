@@ -11,6 +11,7 @@ public abstract class AnimalAbstractTest {
 		tiger.move();
 		eagle.move();
 		
+		
 	}
 
 }
