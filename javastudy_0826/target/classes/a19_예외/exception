@@ -1,0 +1,7 @@
+Java exception
+
+
+※ NullPointerException : 참조할 주소값이 없다.
+
+1. java 예외 처리
+예외가 일어날 수 있는 장소  = try
